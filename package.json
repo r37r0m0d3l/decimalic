@@ -1,0 +1,92 @@
+{
+  "author": "Anton Trofimenko",
+  "bugs": {
+    "url": "https://github.com/r37r0m0d3l/decimalic/issues"
+  },
+  "contributors": [
+    {
+      "email": "r37r0m0d3l@protonmail.com",
+      "name": "Anton Trofimenko"
+    }
+  ],
+  "dependencies": {},
+  "description": "A small pack of utils for arbitrary-precision number calculations. Based on 'decimal.js-light'.",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "11.1.0",
+    "@rollup/plugin-node-resolve": "7.1.3",
+    "decimal.js-light": "2.5.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "jest": "25.4.0",
+    "npm-check": "5.9.2",
+    "prettier": "2.0.5",
+    "rollup": "2.7.2",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-terser": "5.3.0"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "engineStrict": true,
+  "exports": {
+    ".": {
+      "browser": {
+        "import": "./dist/decimalic.mjs",
+        "require": "./dist/decimalic.cjs"
+      },
+      "node": {
+        "import": "./dist/decimalic.mjs",
+        "require": "./dist/decimalic.cjs"
+      },
+      "import": "./dist/decimalic.mjs",
+      "require": "./dist/decimalic.cjs",
+      "default": "./dist/decimalic.js"
+    }
+  },
+  "files": [
+    "dist/decimalic.cjs",
+    "dist/decimalic.cjs.map",
+    "dist/decimalic.d.ts",
+    "dist/decimalic.js",
+    "dist/decimalic.js.map",
+    "dist/decimalic.mjs",
+    "dist/decimalic.mjs.map"
+  ],
+  "homepage": "https://github.com/r37r0m0d3l/decimalic",
+  "keywords": [
+    "arbitrary",
+    "arithmetic",
+    "big",
+    "bigdecimal",
+    "bigint",
+    "biginteger",
+    "bignum",
+    "bignumber",
+    "decimal",
+    "float",
+    "number",
+    "precision"
+  ],
+  "license": "MIT",
+  "main": "./dist/decimalic.cjs",
+  "module": "./dist/decimalic.mjs",
+  "name": "decimalic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r37r0m0d3l/decimalic.git"
+  },
+  "scripts": {
+    "build": "npm run build-cli && npm run build-web",
+    "build-cli": "rollup --config rollup.config.cli.mjs",
+    "build-web": "rollup --config rollup.config.web.mjs",
+    "lint": "eslint ./src/**/*.mjs",
+    "lint-md": "remark .",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "upgrade": "npm-check --update"
+  },
+  "type": "module",
+  "types": "./dist/decimalic.d.ts",
+  "version": "0.0.1"
+}
