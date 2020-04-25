@@ -77,16 +77,16 @@
     "url": "git+https://github.com/r37r0m0d3l/decimalic.git"
   },
   "scripts": {
-    "build": "npm run build-cli && npm run build-web",
-    "build-cli": "rollup --config rollup.config.cli.mjs",
-    "build-web": "rollup --config rollup.config.web.mjs",
+    "build": "npm run build:cli && npm run build:web",
+    "build:cli": "rollup --config rollup.config.cli.mjs",
+    "build:web": "rollup --config rollup.config.web.mjs",
     "lint": "eslint ./src/**/*.mjs",
-    "lint-md": "remark .",
+    "lint:md": "remark .",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "upgrade": "npm-check --update"
+    "package:upgrade": "npm-check --update"
   },
   "type": "module",
   "types": "./dist/decimalic.d.ts",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

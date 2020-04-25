@@ -24,8 +24,8 @@ describe("Function results", () => {
     expect(diff(2.3, 1.0)).toBe(1.3);
   });
   it("divide", () => {
-    expect(355 / 113).toBe(3.1415929203539825);
-    expect(divide(355, 113)).toBe(3.1415929203539825);
+    expect(5.3 / 0.1).toBe(52.99999999999999);
+    expect(divide(5.3, 0.1)).toBe(53);
   });
   it("multiply", () => {
     expect(2232.0 * 0.1).toBe(223.20000000000002);

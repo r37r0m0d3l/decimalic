@@ -24,3 +24,37 @@ Import as ECMAScript module.
 ```javascript
 import { Decimal, diff, divide, multiply, sum } from "decimalic";
 ```
+
+## Examples
+
+### Diff
+
+```javascript
+import { diff } from "decimalic";
+console.log(2.3 - 1.0); // 1.2999999999999998
+console.log(diff(2.3, 1.0)); // 1.3
+```
+
+### Divide
+
+```javascript
+import { divide } from "decimalic";
+console.log(5.3 / 0.1); // 52.99999999999999
+console.log(divide(5.3, 0.1)); // 53
+```
+
+### Multiply
+
+```javascript
+import { multiply } from "decimalic";
+console.log(2232.0 * 0.1); // 223.20000000000002
+console.log(multiply(2232.0, 0.1)); // 223.2
+```
+
+### Sum
+
+```javascript
+import { sum } from "decimalic";
+console.log(2.3 + 1.15); // 3.4499999999999997
+console.log(sum(2.3, 1.15)); // 3.45
+```
