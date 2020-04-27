@@ -8,8 +8,8 @@ import { Decimal } from "./Decimal";
  * @returns {number}
  */
 export function sum(alpha, beta) {
-  const a = new Decimal(alpha);
-  const b = new Decimal(beta);
-  const c = a.plus(b);
-  return c.toNumber();
+  const psi = new Decimal(alpha);
+  const omega = new Decimal(beta);
+  const result = psi.plus(omega);
+  return result.toNumber();
 }

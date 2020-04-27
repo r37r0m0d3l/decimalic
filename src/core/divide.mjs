@@ -8,8 +8,8 @@ import { Decimal } from "./Decimal";
  * @returns {number}
  */
 export function divide(alpha, beta) {
-  const a = new Decimal(alpha);
-  const b = new Decimal(beta);
-  const c = a.dividedBy(b);
-  return c.toNumber();
+  const psi = new Decimal(alpha);
+  const omega = new Decimal(beta);
+  const result = psi.dividedBy(omega);
+  return result.toNumber();
 }

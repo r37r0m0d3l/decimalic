@@ -8,8 +8,8 @@ import { Decimal } from "./Decimal";
  * @returns {number}
  */
 export function multiply(alpha, beta) {
-  const a = new Decimal(alpha);
-  const b = new Decimal(beta);
-  const c = a.times(b);
-  return c.toNumber();
+  const psi = new Decimal(alpha);
+  const omega = new Decimal(beta);
+  const result = psi.times(omega);
+  return result.toNumber();
 }

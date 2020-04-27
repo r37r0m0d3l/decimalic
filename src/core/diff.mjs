@@ -8,8 +8,8 @@ import { Decimal } from "./Decimal";
  * @returns {number}
  */
 export function diff(alpha, beta) {
-  const a = new Decimal(alpha);
-  const b = new Decimal(beta);
-  const c = a.minus(b);
-  return c.toNumber();
+  const psi = new Decimal(alpha);
+  const omega = new Decimal(beta);
+  const result = psi.minus(omega);
+  return result.toNumber();
 }
