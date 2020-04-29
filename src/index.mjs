@@ -1,6 +1,6 @@
-export { Decimal } from "./core/Decimal.mjs";
+export { Decimal } from "./core/Decimal";
 
-export { diff } from "./core/diff.mjs";
-export { divide } from "./core/divide.mjs";
-export { multiply } from "./core/multiply.mjs";
-export { sum } from "./core/sum.mjs";
+export { diff } from "./core/diff";
+export { divide } from "./core/divide";
+export { multiply } from "./core/multiply";
+export { sum } from "./core/sum";
